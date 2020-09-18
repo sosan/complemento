@@ -2,3 +2,75 @@
 /* *** Estilos SOLO para index.html *** */
 /* *********************************** */
 
+/* Variables */
+:root {
+    /* Color */
+    --color-grey-light: #c6c6c6;
+    --color-grey-medium: #929292;
+    --color-grey-dark: #3a3a3a;
+    --white: #f2f2f2;
+    --black: #080808;
+
+    /* Card */
+    --card_fondo: #f4f4f4;
+    --card-radius: 10px;
+    --card-shadow: 3px 3px 5px rgba(0, 0, 0, 0.25);
+
+    /* Tipogafía */
+    --font-primary: Arial;
+    --font-aux: sans-serif;
+
+  }
+
+  html{
+      font-family: var(--font-primary), var(--font-aux);
+  }
+
+/* Estilos de Texto */
+
+  .pie_foto {
+    font-size: 14px;
+    color: var(--color-grey-light);
+  }
+  .subtitulo {
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--color-grey-dark);
+  }
+  .parrafo {
+    font-size: 14px;
+    color: var(--color-grey-dark);
+  }
+
+
+
+  /* **************************** */
+  main{
+      display: flex;
+      justify-content: center;
+  }
+  .card{
+      width: 250px;
+      /* height: 300px; */
+      border-radius: var(--card-radius);
+      background-color: var(--card_fondo);
+      box-shadow: var(--card-shadow);
+  }
+  .card_banner{
+      border-radius: var(--card-radius) var(--card-radius) 0 0;
+      width: 100%;
+  }
+  figcaption.card_texto{
+    display: flex;
+    justify-content: center;
+  }
+  ul.card_texto_grupo{
+      list-style-type: none;
+  }
+  li.card_texto_grupo_subtitulo{
+      margin-top: 1.5rem;
+      
+  }
+  li.card_texto_grupo_parrafo{
+      width: 80%;
+  }
