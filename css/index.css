@@ -8,69 +8,298 @@
     --color-grey-light: #c6c6c6;
     --color-grey-medium: #929292;
     --color-grey-dark: #3a3a3a;
+
+    --background-color-tag: #C4C4C4;
+    --color-tag: #000000;
     --white: #f2f2f2;
     --black: #080808;
 
     /* Card */
-    --card_fondo: #f4f4f4;
-    --card-radius: 10px;
+    --card_fondo: #E8E8E8;
+    --card-radius: 20px;
     --card-shadow: 3px 3px 5px rgba(0, 0, 0, 0.25);
 
     /* Tipogafía */
-    --font-primary: Arial;
+    --font-primary: "Roboto";
     --font-aux: sans-serif;
 
-  }
+    --font-size-h4: 12px;
+    
 
-  html{
-      font-family: var(--font-primary), var(--font-aux);
-  }
+}
+
+/* Resets Temporales */
+h1, h2, h3, h4, h5, h6
+{
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+ul
+{
+    display: block;
+    list-style-type: none;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+
+}
+
+figure
+{
+    
+    display: block;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+html
+{
+    font-family: var(--font-primary), var(--font-aux);
+    background-color: #E8E8E8;
+}
+
+
 
 /* Estilos de Texto */
-
-  .pie_foto {
+.pie_foto 
+{
     font-size: 14px;
     color: var(--color-grey-light);
-  }
-  .subtitulo {
+}
+.subtitulo 
+{
     font-size: 18px;
     font-weight: bold;
     color: var(--color-grey-dark);
-  }
-  .parrafo {
-    font-size: 14px;
-    color: var(--color-grey-dark);
-  }
+}
 
 
 
-  /* **************************** */
-  main{
-      display: flex;
-      justify-content: center;
-  }
-  .card{
-      width: 250px;
-      /* height: 300px; */
-      border-radius: var(--card-radius);
-      background-color: var(--card_fondo);
-      box-shadow: var(--card-shadow);
-  }
-  .card_banner{
-      border-radius: var(--card-radius) var(--card-radius) 0 0;
-      width: 100%;
-  }
-  figcaption.card_texto{
+
+/* **************************** */
+main
+{
     display: flex;
     justify-content: center;
-  }
-  ul.card_texto_grupo{
-      list-style-type: none;
-  }
-  li.card_texto_grupo_subtitulo{
-      margin-top: 1.5rem;
-      
-  }
-  li.card_texto_grupo_parrafo{
-      width: 80%;
-  }
+}
+.card
+{
+    width: 347px;
+    /* height: 300px; */
+    border-radius: var(--card-radius) var(--card-radius) 0 0;
+    background-color: var(--card_fondo);
+    /* box-shadow: var(--card-shadow); */
+
+    position: relative;
+}
+
+.card_banner
+{
+    border-radius: var(--card-radius) var(--card-radius) 0 0;
+    width: 100%;
+    z-index: 1;
+}
+
+/* .card_texto
+{
+    display: flex;
+    justify-content: center;
+}
+
+.card_texto_grupo{
+    list-style-type: none;
+}
+
+.card_texto_grupo_subtitulo{
+    margin-top: 1.5rem;
+    
+}
+
+.card_texto_grupo_parrafo{
+    width: 80%;
+} */
+
+.card_grupoTextoSuperior
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 64%;
+    left: 0px;
+    /* gap: 10px; */
+    
+   
+
+
+}
+
+.card_grupoTextoSuperior_titulo
+{
+    margin-left: 4%;
+    margin-bottom: 2px;
+    color: #c6c6c6;
+    
+}
+
+.card_grupoTextoSuperior_linea
+{
+
+}
+
+.lineaRelleno
+{
+    width: 31%;
+    height: 2px;
+    background-color: #FF6B6B;
+    margin-left: 4%;
+}
+
+.card_grupoTextoSuperior_subtitulo
+{
+    margin-left: 4%;
+    margin-top: 12px;
+    color: #c6c6c6;
+}
+
+.card_grupoTextoSuperior_iconoRedesSociales
+{
+
+    align-self: flex-end;
+    margin-right: 4%;
+    margin-top: 7%;
+}
+
+
+.card_grupoTextoSuperior_iconoRedesSociales
+{
+    align-self: flex-end;
+    z-index: 2;
+}
+
+
+
+.card_grupoTextoSuperior_recortador
+{
+    position: absolute;
+    top: 66%;
+    left: 0px;
+    fill: #E8E8E8;
+    z-index: 1;
+}
+
+.fillGrey
+{
+    fill: #3C3C3C;
+    
+}
+
+.fillSocialIcon
+{
+    fill: #909CA7;
+}
+
+.textoH3
+{
+    font-size: 12px;
+
+}
+
+/* ZONAAAAA */
+
+.margenIzquierda
+{
+    margin-left: 4%;
+}
+
+.zonaAbajo
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    /* top: 64%; */
+    left: 0px;
+}
+
+.redesSociales
+{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+    
+    /* margin-bottom: 2px; */
+    /* color: #c6c6c6; */
+}
+
+.textoRedesSociales
+{
+    font-family: var(--font-primary);
+    font-weight: bold;
+    line-height: 20px;
+}
+
+
+.parrafo
+{
+    font-size: 14px;
+    color: var(--color-grey-dark);
+    width: 90%;
+}
+
+
+.frasePeke
+{
+    font-size: var(--font-size-h4);
+    font-weight: 500;
+    color: var(--color-grey-medium);
+}
+
+.imagenesPersonajes
+{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.imagenPersona
+{
+    border-radius: 50%;
+}
+
+.tags
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-basis: 90px;
+    gap: 10px;
+
+    margin-top: 20px;
+}
+
+.fondoTag
+{
+    
+}
+
+.tagTexto
+{
+    line-height: 27px;
+    background-color: var(--background-color-tag);
+    width: 90px;
+    border-radius: 20px;
+    font-size: 13px;
+    /* padding: 10px; */
+    text-align: center;
+    color: var(--color-tag);
+}
